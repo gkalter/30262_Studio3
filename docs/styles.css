@@ -44,16 +44,19 @@ h2,
 h3 {
   margin: 10px;
   font-size: 1.2em;
+  background-color: #E85A4F;
 }
 
 h3 {
   font-size: 1em;
+  background-color: #E85A4F;
 }
 
 p {
   font-size: 0.85em;
   margin: 10px;
   text-align: left;
+  background-color: #E98074;
 }
 
 /**
