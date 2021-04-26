@@ -72,13 +72,15 @@ center: [-122.44, 37.76],
 zoom: 9,
 speed: 0.2,
 curve: 1,
+pitch:60,
+bearing:45,
 easing(t) {
 return t;
 }
 });
     // Add a function that sets pitch (tilt) to 60 and bearing (rotation) to 45: https://docs.mapbox.com/mapbox-gl-js/api/#map#setpitch and https://docs.mapbox.com/mapbox-gl-js/api/#map#setbearing
-options.pitch(60)
-options.bearing(45)
+
+
     // Add a search box: https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/
     map.addControl(
     new MapboxGeocoder({
