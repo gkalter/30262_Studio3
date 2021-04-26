@@ -51,7 +51,8 @@ var map = new mapboxgl.Map({
   center: [-84.5, 38.05], // starting position
   zoom: 12 // starting zoom
 });
-
+<!-- read in features-->
+  
 var hospitals = {
 'type': 'FeatureCollection',
 'features': [
@@ -238,7 +239,8 @@ var libraries = {
 }
 ]
 };
-
+<!-- display features-->
+  
 map.on('load', function () {
 map.addLayer({
 id: 'hospitals',
@@ -307,7 +309,8 @@ return;
 }
 
 var libraryFeature = libraryFeatures[0];
-
+  
+<!-- enable turf -->
 var nearestHospital = turf.nearest(libraryFeature, hospitals);
 
 if (nearestHospital != null) {
@@ -315,7 +318,8 @@ map.getSource('nearest-hospital').setData({
 'type': 'FeatureCollection',
 'features': [nearestHospital]
 });
-
+<!-- symbology -->
+  
 map.addLayer(
 {
 id: 'nearest-hospital',
