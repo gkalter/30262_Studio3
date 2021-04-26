@@ -3,7 +3,7 @@ ul {
  margin: 1px;
  padding: 1px;
  overflow: hidden;
- background-color: #EAE7DC ;
+ background-color: #EAE7DC;
 }
 
 li {
@@ -75,7 +75,7 @@ p {
   right: 0;
   background: rgba(255, 255, 255, 0.8);
   margin-right: 20px;
-  font-family: Arial, sans-serif;
+  font-family:"apercu",sans-serif;
   overflow: auto;
   border-radius: 3px;
 }
